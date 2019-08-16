@@ -13,7 +13,7 @@ def average_student_gpa
 end
 
 def total_tardies_for_all_students
-  "SELECT SUM(tardies) AS total_tardies FROM students;"
+  "SELECT SUM(tardies) AS total_tardies FROM students;"   #'AS total_tardies == aliasing the return value'
 end
 
 def average_gpa_for_9th_grade
