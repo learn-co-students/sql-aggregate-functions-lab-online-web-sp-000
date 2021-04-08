@@ -1,6 +1,5 @@
 require "spec_helper"
 
-
 describe "aggregate functions sql" do
   before do
     @db = SQLite3::Database.new(':memory:')
@@ -35,5 +34,4 @@ describe "aggregate functions sql" do
       expect(@db.execute(average_gpa_for_9th_grade).first.first).to be_within(0.0001).of(3.3)
     end
   end
-
 end
